@@ -1,6 +1,6 @@
 import { IUserRepository, UserRepository } from './user.repository';
 
-describe('UserRepository', ()=>{
+describe('UserRepository@getAll', ()=>{
 
     let userRepository: IUserRepository;
 
@@ -8,7 +8,7 @@ describe('UserRepository', ()=>{
         userRepository = new UserRepository();
     });
 
-    it('Should getAll return a list of users', async ()=>{
+    it('Should return a list of users', async ()=>{
         const users = await userRepository.getAll();
         expect(users.length).toBeGreaterThan(0);
     });

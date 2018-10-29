@@ -17,6 +17,7 @@ export class UserRepository implements IUserRepository {
     async getAll(): Promise<Array<IUser>> {
         let users = await this._userList;
 
+        console.log('getAll from repo')
         return users;
     }
 }

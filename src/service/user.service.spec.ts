@@ -1,5 +1,5 @@
 import * as TypeMoq from "typemoq";
-import { IUserRepository, UserRepository } from '../repository/user.repository';
+import { IUserRepository } from '../repository/user.repository';
 import { IUserService, UserService } from './user.service';
 import { IUser } from '../interface/user.interface';
 
