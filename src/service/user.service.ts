@@ -1,7 +1,7 @@
 import { IUserRepository } from '../repository/user.repository';
 import { IUser } from '../interface/user.interface';
 
-export interface IUserService{
+export interface IUserService {
     getAll(): Promise<Array<IUser>>;
 }
 

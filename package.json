@@ -25,6 +25,12 @@
   },
   "jest": {
     "verbose": true,
-    "preset": "ts-jest"
+    "preset": "ts-jest",
+    "setupFiles": [
+      "./src/config/ioc.config.ts"
+    ]
+  },
+  "dependencies": {
+    "inversify": "^5.0.1"
   }
 }
