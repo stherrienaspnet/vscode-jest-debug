@@ -20,6 +20,7 @@ describe('UserService', () => {
     it('Shoud getAll call the expected repository method', async () => {
         let userService: IUserService = new UserService(repositoryMock.object);
         const users = await userService.getAll();
+        
         expect(users.length).toBeGreaterThan(0);
         repositoryMock.verifyAll();
     });
