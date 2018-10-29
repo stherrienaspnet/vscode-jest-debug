@@ -1,0 +1,23 @@
+{
+  "name": "vscode-jest-debug",
+  "version": "1.0.0",
+  "description": "Example of working of a configuration with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stherrienaspnet/vscode-jest-debug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stherrienaspnet/vscode-jest-debug/issues"
+  },
+  "homepage": "https://github.com/stherrienaspnet/vscode-jest-debug#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.8",
+    "jest": "^23.6.0"
+  }
+}
