@@ -3,7 +3,7 @@ import { IUserRepository } from '../repository/user.repository';
 import { IUserService, UserService } from './user.service';
 import { IUser } from '../interface/user.interface';
 
-describe('UserService', () => {
+describe('UserService@getAll', () => {
 
     const userList: Array<IUser> = [
         { firstName: 'Bob', lastName: 'Marley', age: 43 },
@@ -17,7 +17,7 @@ describe('UserService', () => {
         repositoryMock.setup(x => x.getAll()).returns(async () => userList).verifiable();
     });
 
-    it('Shoud getAll call the expected repository method', async () => {
+    it('Shoud call the expected repository method', async () => {
         let userService: IUserService = new UserService(repositoryMock.object);
         const users = await userService.getAll();
         
