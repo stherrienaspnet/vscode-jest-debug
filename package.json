@@ -18,6 +18,7 @@
   "homepage": "https://github.com/stherrienaspnet/vscode-jest-debug#readme",
   "devDependencies": {
     "@types/jest": "^23.3.8",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "typemoq": "^2.1.0"
   }
 }
